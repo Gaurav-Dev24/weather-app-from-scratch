@@ -1,0 +1,17 @@
+.searchData input {
+    /* border: transparent; */
+    padding: 0.5rem;
+    border-radius: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+  }
+  
+  .searchData button {
+    border: transparent;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    background-color: #1661b6;
+    color: #ffffff;
+    border-radius: .5rem;
+    font-size: 2rem;
+  }
