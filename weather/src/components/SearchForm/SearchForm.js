@@ -1,21 +1,19 @@
 import React from "react";
 import "./SearchForm.css";
 
-const SearchForm = ({searchTerm, onChange}) => {
-  
 
+const SearchForm = ({search, query, onChange}) => {
   return (
-    <form onsubmit="getData(event)" className="searchData">
-      <input
-        id="inputBox"
-        type="text"
-        placeholder="Enter the city name"
-        onChange={onChange}
-        value={searchTerm}
-      />
-      {/* {console.log(inputBox)} */}
-      {/* <button>Search</button> */}
-    </form>
+    <div className="search-box">
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Search your city"
+            onChange={onChange}
+            value={query}
+            onKeyPress={search}
+          />
+        </div>
   );
 };
 
